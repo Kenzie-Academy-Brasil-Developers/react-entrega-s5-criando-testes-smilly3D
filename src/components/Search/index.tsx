@@ -2,7 +2,7 @@ import React from "react";
 import { Input, Button, Icon, Header } from "semantic-ui-react";
 import { useLocateCep } from "../../providers/CepProvider";
 
-const Search = () => {
+export const Search = () => {
   const { cepNumber, setCepNumber, handleSearch } = useLocateCep();
   return (
     <>
@@ -28,5 +28,3 @@ const Search = () => {
     </>
   );
 };
-
-export default Search;
