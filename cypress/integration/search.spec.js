@@ -5,8 +5,10 @@ context("Search", () => {
     cy.get("input[type=number]").type(65054310);
     cy.get("button").click();
     cy.contains("Logradouro");
-    cy.contains("Rua Cinco");
+    cy.contains("Número");
+    cy.contains("Complemento");
     cy.contains("Bairro");
-    cy.contains("Cohatrac II");
+    cy.contains("Cidade");
+    cy.contains("Estado");
   });
 });
